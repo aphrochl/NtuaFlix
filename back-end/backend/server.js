@@ -50,7 +50,7 @@ const upload = multer();
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', (req, res) => {
+app.get('/ntuaflix_api', (req, res) => {
   // Assuming you want to serve the index.html file
   res.sendFile(path.join(__dirname, 'public', 'index_homepage.html'));
 });
@@ -284,7 +284,7 @@ app.post(`${baseURL}/admin/upload/namebasics`, upload.single('truncated_name.bas
         status: 'success',
         message: 'Data uploaded and inserted into the database successfully'
       };
-      if (format === 'csv')
+      if (format === 'json')
         res.status(200).json(response); // Success: Data uploaded and inserted into the database successfully
       else
         res.status(200).send(converter.json2csv(response));
