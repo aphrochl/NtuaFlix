@@ -8,7 +8,7 @@ const FormData = require('form-data');
 const https = require('https');
 
 
-const baseURL = 'https://localhost:8765/energy/api';
+const baseURL = 'https://localhost:9876/ntuaflix_api';
 
 const csvmaker = function (data) {
 
@@ -391,7 +391,7 @@ yargs
         // Set the options for the https.request
         const options = {
           hostname: 'localhost', // Replace with your API hostname
-          port: 8765,            // Replace with your API port
+          port: 9876,            // Replace with your API port
           path: '/energy/api/searchtitle',
           method: 'GET',
           headers: {
@@ -485,7 +485,7 @@ yargs
         // Set the options for the https.request
         const options = {
           hostname: 'localhost', // Replace with your API hostname
-          port: 8765,            // Replace with your API port
+          port: 9876,            // Replace with your API port
           path: '/energy/api/bygenre',
           method: 'GET',
           headers: {
