@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="small_logo.png">
+    <title>Search Results</title>  
+</head>
+<body>
+
+    <!--Header section-->
+    <header>
+        <div class="logo">
+            <a href="index_homepage.html">
+                <img src="big_logo.png" alt="">
+                <h3>NTUA Flix</h3>
+            </a>
+        </div>
+        <style>
+            #searchContainer {
+                position: fixed;
+                top: 10vh; /* Adjust this value to set the height in relation to the second screen */
+                left: 50vw; /* Adjust this value if you want to horizontally center it */
+                transform: translate(-50%, -50%);
+                background-color: #00000000; /* Add background color if needed */
+                padding: 10px;
+                box-shadow: none; /* Add a box shadow for a nice visual effect */
+                z-index: 1000; /* Set the z-index to ensure it's on top of other elements */
+            }
+        </style>
+        <div id="searchContainer" class="searchfield-container">
+            <label for="searchInput">Search </label>
+            <input type="text" id="searchInput" placeholder="Enter movie title" class="searchfield" style="height: 40px;">
+            <button id="searchButton" onclick="searchMovies()">Search</button>
+        </div>
+
+        <div id="resultContainer">
+            <div class="column" id="leftColumn"></div>
+            <div class="column" id="rightColumn"></div>
+        </div>
+        <div class="nav" id="small_menu">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+         
+    </header>
+
+    
+    <div id="resultHeader">
+        <h2>Search Results</h2>
+    </div>
+    <div id="viewContainer">
+    <div id="resultsContainer">
+        <div id="titleResults" onclick="goToTitleDetails()">
+            <h2>Movies & TV Shows</h2>
+            <div id="titleContainer"></div>
+        </div>
+
+        <div id="nameResults" onclick="goToNameDetails()">
+            <h2>Cast & Crew</h2>
+            <div id="nameContainer"></div>
+        </div>
+    </div>
+    </div>
+     
+<!-- Go-to button -->
+<div class="scroll">
+    <a href=""><i class="fas fa-arrow-up"></i></a>
+</div>
+
+<script src="results.js"></script>
+<script src="homepage.js"></script>
+</body>
+</html>

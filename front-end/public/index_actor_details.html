@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="small_logo.png">
+    <title id="actorName"></title>
+    <style>
+        body {
+            margin: 0;
+       
+    min-height: 100vh; /* Set a minimum height of 100% of the viewport height */
+}
+
+
+        .slatest-movies {
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .scroll-arrow {
+            position: fixed;
+            top: 77%;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .scroll-arrow-left {
+            left: 0;
+        }
+
+        .scroll-arrow-right {
+            right: 0;
+        }
+
+        .slatest-container {
+            display: flex;
+            gap: 15px;
+            white-space: nowrap;
+            transition: transform 0.3s ease;
+            margin: 0 20px;
+        }
+
+        .slatest-inside {
+            flex: 0 0 auto;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index_homepage.html">
+                <img src="big_logo.png" alt="">
+                <h3>NTUA Flix</h3>
+            </a>
+        </div>
+        <style>
+            #searchContainer {
+                position: fixed;
+                top: 10vh; /* Adjust this value to set the height in relation to the second screen */
+                left: 50vw; /* Adjust this value if you want to horizontally center it */
+                transform: translate(-50%, -50%);
+                background-color: #00000000; /* Add background color if needed */
+                padding: 10px;
+                box-shadow: none; /* Add a box shadow for a nice visual effect */
+                z-index: 1000; /* Set the z-index to ensure it's on top of other elements */
+            }
+        </style>
+        <div id="searchContainer" class="searchfield-container">
+            <label for="searchInput">Search </label>
+            <input type="text" id="searchInput" placeholder="Enter movie title" class="searchfield" style="height: 40px;">
+            <button id="searchButton" onclick="searchMovies()">Search</button>
+        </div>
+        
+        <div id="resultContainer">
+            <div class="column" id="leftColumn"></div>
+            <div class="column" id="rightColumn"></div>
+        </div>
+        <script src="homepage.js"></script>  
+    </header>   
+
+    <!-- Hero section -->
+    <section>
+        <div class="heropage">
+            <div class="inside-heropage" style="margin-top: -100px;">
+                <h1 id="actorName"></h1>
+                <p id="profession"></p>
+                <p id="birthYear"></p>
+                <p id="deathYear"></p>
+            </div>
+        </div>
+        <div class="poster">
+            <!-- <img src="" alt="Actor Poster" id="posterImg"> -->
+            <!-- τι  έχει σε αυτη την γραμμη η δωρα? -->
+            <!-- <img src="${getPosterUrl(name.namePoster, 'w185')}" alt="Poster Image" onerror="this.src='none.png'" style="max-height: 250px;"><br><br> -->
+            <!-- <img src="" alt="Actor Poster" id="posterImg" alt="Poster Image" onerror="none.png"><br><br> -->
+            <img src="" alt="Actor Poster" id="posterImg">
+        </div>
+    </section>
+    <div class="slatest-movies">
+        <h1>Works</h1>
+        <div class="slatest-container" id="slatestContainer"></div>
+        <i class="fas fa-arrow-right scroll-arrow scroll-arrow-right" onclick="scrollRight()"></i>
+        </div>
+     
+    <div class="scroll">
+        <a href=""><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <script src="workofactor.js"></script>
+    <script src="actordetails.js"></script>
+    <script>
+   document.addEventListener("DOMContentLoaded", function() {
+        var actorNameElement = document.getElementById('actorName');
+        var actorName = actorNameElement ? actorNameElement.innerText : "NTUA Flix";
+        document.title = actorName + ' - NTUA Flix';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="icon" href="small_logo.png">
+        <title  >NTUA Flix</title>
+     
+
+    <style>
+        
+        
+        #searchForm {    margin-top: 100px;
+    color: rgb(251, 251, 251);
+    display: flex; /* Add this line to enable flexbox */
+    justify-content: center; /* Add this line to center items horizontally */
+    text-align: center; 
+     
+    
+    color: rgb(251, 251, 251); /* Add this line to set the text color to blue */
+
+}
+
+h1 {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: rgb(246, 246, 248); /* Add this line to set the text color to blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    min-height: 100vh;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add the following CSS for blue color */
+label, select, input, button {
+    color: rgb(255, 255, 255);
+}
+ select, input, button {
+    color: rgb(0, 0, 0);
+}
+.movie-container {
+    margin: 30px;
+    text-align: center;
+    max-width: 200px; /* Set a maximum width for the container */
+}
+
+.movie-container img {
+    width: 100%;
+    max-height: 150px;
+    cursor: pointer;
+}
+
+.movie-container p {
+    margin: 0;
+    font-size: 17px; /* Set the font size for movie name */
+    color: azure;
+    font-weight: bold;
+}
+         
+
+#searchContainer {
+    background-color: #00000000;
+    padding: 10px;
+    box-shadow: none;
+    z-index: 1000;
+    margin-left: 10px; /* Adjust this value as needed for spacing */
+}    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index_homepage.html">
+                <img src="big_logo.png" alt="">
+                <h3>NTUA Flix</h3>
+            </a>
+        </div>
+         
+    </header>
+    <style>
+        #searchContainer {
+            position: fixed;
+            top: 10vh; /* Adjust this value to set the height in relation to the second screen */
+            left: 50vw; /* Adjust this value if you want to horizontally center it */
+            transform: translate(-50%, -50%);
+            background-color: #00000000; /* Add background color if needed */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for a nice visual effect */
+            z-index: 1000; /* Set the z-index to ensure it's on top of other elements */
+        }
+    </style>
+    <div id="searchContainer" class="searchfield-container">
+        <label for="searchInput">Search </label>
+        <input type="text" id="searchInput" placeholder="Enter movie title" class="searchfield" style="height: 40px;">
+        <button id="searchButton" onclick="searchMovies()">Search</button>
+    </div>
+    
+    <div id="resultContainer">
+        <div class="column" id="leftColumn"></div>
+        <div class="column" id="rightColumn"></div>
+    </div>
+    <script src="homepage.js"></script>
+    <h1>Movie & TV Show  base on Genre</h1>
+
+    <form id="searchForm" onsubmit="searchMoviesgenre(); return false;">      
+        <label for="qgenre">Genre:</label>
+        <select id="qgenre" name="qgenre" required>
+            <option value="Comedy">Comedy</option>
+            <option value="Animation">Animation</option>
+            <option value="Short">Short</option>
+            <option value="Drama">Drama</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Sport">Sport</option>
+            <option value="Horror">Horror</option>
+            <option value="Biography">Biography</option>
+            <option value="History">History</option>
+            <option value="Crime">Crime</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Musical">Musical</option>
+            <option value="Adult">Adult</option>
+            <option value="War">War</option>
+        </select>
+      
+
+        <label for="minrating">Minimum Rating:</label>
+        <input type="number" id="minrating" name="minrating" min="0" max="10" step="0.1" required>
+
+        <label for="yrFrom">Year From:</label>
+        <input type="number" id="yrFrom" name="yrFrom" min="1900" max="2024">
+
+        <label for="yrTo">Year To:</label>
+        <input type="number" id="yrTo" name="yrTo" min="1900" max="2024">
+
+        
+        <button type="button" onclick="searchMoviesgenre()">Search</button>
+        
+    </form>
+
+    <div id="resultHeader" style="margin-top: 50px; margin-bottom: 20px;">
+    </div>
+    <div id="viewContainer">
+        <div id="results"></div>
+    <script src="genre.js"></script>
+    </div>
+
+    
+     
+</body>
+</html>

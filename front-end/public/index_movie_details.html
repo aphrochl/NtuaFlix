@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="small_logo.png">
+    <title id="movieTitle"></title>    <!-- there goes the title of the movie -->
+
+    <style>
+      body {
+            margin: 0;
+        }
+
+        .slatest-movies {
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .scroll-arrow {
+            position: fixed;
+            top: 77%;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .scroll-arrow-left {
+            left: 0;
+        }
+
+        .scroll-arrow-right {
+            right: 0;
+        }
+
+        .slatest-container {
+            display: flex;
+            gap: 15px;
+            white-space: nowrap;
+            transition: transform 0.3s ease;
+            margin: 0 20px;
+        }
+
+        .slatest-inside {
+            flex: 0 0 auto;
+            width: 200px;
+        }
+
+        .ipc-btn--single-padding {
+    position: absolute; /* or 'fixed' depending on your layout */
+    left: 59%; /* Adjust this value as needed */
+    top: 65%; /* Adjust or remove based on your needs */
+}
+
+
+    </style>
+</head>
+<style>
+    #searchContainer {
+        position: fixed;
+        top: 10vh; /* Adjust this value to set the height in relation to the second screen */
+        left: 50vw; /* Adjust this value if you want to horizontally center it */
+        transform: translate(-50%, -50%);
+        background-color: #00000000; /* Add background color if needed */
+        padding: 10px;
+        color: azure;
+        box-shadow: none; /* Add a box shadow for a nice visual effect */
+        z-index: 1000; /* Set the z-index to ensure it's on top of other elements */
+    }
+</style>
+<div id="searchContainer" class="searchfield-container">
+    <label for="searchInput">Search </label>
+    <input type="text" id="searchInput" placeholder="Enter movie title" class="searchfield" style="height: 40px;">
+    <button id="searchButton" onclick="searchMovies()">Search</button>
+</div>
+
+<div id="resultContainer">
+    <div class="column" id="leftColumn"></div>
+    <div class="column" id="rightColumn"></div>
+</div>
+<script src="homepage.js"></script>
+<body> 
+    <header>
+        <div class="logo">
+            <a href="index_homepage.html">
+                <img src="big_logo.png" alt="">
+                <h3>NTUA Flix</h3>
+            </a>
+        </div>
+        <a class="ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-baseAlt ipc-btn--theme-baseAlt ipc-btn--on-textPrimary ipc-text-button sc-acdbf0f3-2 caaLCv" 
+        tabindex="0" 
+        aria-label="View User Ratings" 
+        aria-disabled="false">
+        <span class="ipc-btn__text">
+            <div class="sc-acdbf0f3-3 eWQwwe">
+                <div class="sc-bde20123-4 jIEDat">
+                    <!-- This div is for alignment, ensure it is styled appropriately -->
+                    <div style="display: flex; align-items: center;">
+                        <!-- SVG star icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--star sc-bde20123-4 frBGmx" viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                            <path d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"></path>
+                        </svg>
+                <div class="sc-bde20123-0 dLwiNw">
+                    <div data-testid="hero-rating-bar__aggregate-rating__score" class="sc-bde20123-2 cdQqzc">
+                        <!-- Movie rating and "/10" -->
+                        <span id="movieRating"></span><!--
+                        --><span>/10</span>
+                    </div>
+                    <div class="sc-bde20123-5 gyVtuR"></div>
+                    <p id="movieVotes"></p>
+                </div>
+            </div>
+        </span>
+     </a>     
+    </header>
+    
+    <!-- Hero section -->
+    <section>
+        
+        <section>
+            <div class="heropage">
+                
+                <div class="inside-heropage" style="margin-top: -100px;">
+                    <h1 id="heroMovieTitle"></h1>
+            <p id="movieCategory"></p>
+            <p id="movieReleaseYear"></p>
+            <p id="movieRating"></p>
+            <p id="movieVotes"></p>
+            <p id="movieGenres"></p>
+            <p id="movieRuntimeMinutes"></p>
+
+            <div id="movieTitleAkas"></div> <!-- Add this div for alternate titles -->
+            <div id="moviePrincipals"></div>
+                 
+                   <!---  <p id="movieTitleAkas"></p>-->
+                
+                
+                
+               
+                </div>
+            </div>
+            <div class="poster">
+                
+                <img src="" alt="Poster Image" onerror="this.src='big_logo.png'" style="max-height: 500px;" id="posterImg">
+                
+            </div>
+        </section>
+        
+    </section>
+
+    <!-- Insert the provided code snippet here -->
+     
+
+    <div class="slatest-movies"> 
+        <h1>Cast & Crew</h1>
+        <div class="slatest-container" id="slatestContainer"></div>
+                <!-- <i class="fas fa-arrow-left scroll-arrow scroll-arrow-left" onclick="scrollLeft()"></i> -->
+        <i class="fas fa-arrow-right scroll-arrow scroll-arrow-right" onclick="scrollRight()"></i>
+        
+        <script src="movie.js"></script>  
+        <script src="castandcrew.js"></script>
+    </div>
+     
+
+    <!-- Goto button -->
+    <div class="scroll">
+        <a href=""><i class="fas fa-arrow-up"></i></a>
+    </div>
+   
+    
+    
+     
+</body>
+</html>
