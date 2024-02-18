@@ -14,13 +14,13 @@
 
 Στο Back-end υλοποιούμε τα εξής:
 
-##REST Api
+#### REST Api
 
 1. Διαχειριστικά endpoints
 2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
 3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
 
-###Database Connection
+#### Database Connection
 
 
 
