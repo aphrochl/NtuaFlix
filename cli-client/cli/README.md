@@ -39,7 +39,7 @@ se2355.exe scope --param1 value1 [--param2 value2 ...] --format fff
 
 ## Using the CLI:
 
-In command prompt execute the commands for either [Node.js](###node.js) or [executable](###executable) where:
+In command prompt execute the commands for either [Node.js](#node.js) or [executable](#executable) where:
 
 scope: 
 - resetall       	Reset all data on the server
