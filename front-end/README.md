@@ -3,9 +3,24 @@
 Ενδεικτικά περιεχόμενα:
 
 - Front-end παρουσίασης δεδομένων σε περιβάλλον web.
+
+
+
+
  
 [![ntuaflix.PNG](public/ntuaflix.PNG)](https://github.com/ntua/softeng23-55/blob/main/front-end/ntuaflix.PNG)
+
+
+
+
+
+
+
 Αποτελείται από το public file, στο οποίο υλοποιούμε τα εξής:
+
+
+
+
 
 - [**index_homepage.html**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/index_homepage.html) - HTML file for the homepage for our website .
 - [**homepage.js**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/homepage.js) -Javascript file for the homepage
