@@ -20,32 +20,20 @@
 2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
 3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
 
+#### Database Connection
 
 
+## Installation
 
-## Installation for back-end  and the packages
-Take the package.json 
+Copy the files in the back-end folder into your desired directory.
+Install the packages:
 
-
+```sh
+npm init
 ```
-install dependencies
-
 ```sh
 npm install
 ```
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
