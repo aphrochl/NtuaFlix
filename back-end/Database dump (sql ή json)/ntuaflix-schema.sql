@@ -118,4 +118,6 @@ CREATE TABLE IF NOT EXISTS `title_episode` (
 	ON DELETE NO ACTION
 	ON UPDATE NO ACTION);
     
+ALTER TABLE `title_akas`
+  ADD UNIQUE KEY `unique_title_ordering` (`title_title_id`,`AKA_ordering`) USING BTREE;
     
