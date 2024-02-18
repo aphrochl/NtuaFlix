@@ -3,7 +3,7 @@
 Ενδεικτικά περιεχόμενα:
 
 - Front-end παρουσίασης δεδομένων σε περιβάλλον web.
-
+![Logo](front-end/public/big_logo.png)
 Αποτελείται από το public file, στο οποίο υλοποιούμε τα εξής:
 
 - [**index_homepage.html**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/index_homepage.html) - HTML file for the homepage for our website .
