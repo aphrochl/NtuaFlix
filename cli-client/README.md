@@ -89,6 +89,36 @@ Supported commands for each scope:
 
 
 # CLI functional tests
+
+#### Installing the packages:
+
+Create a copy of the *__tests__* folder into your desired directory, where _cli.js_ and _package.json_ exist.
+
+In command prompt, navigate to the selected directory and install Jest and Supertest:
+
+```sh
+npm install --save-dev jest supertest nock
+```
+
+or just install all the dependencies of the package.json file:
+
+```sh
+npm install
+```
+
+#### Usage:
+
+To run the CLI tests, execute the command:
+
+```
+npx jest
+```
+
+
+
+
+
+
 # CLI unit tests
 10. title --titleID ":titleID" [--format json|csv]
 11. titlefull --titleID ":titleID" [--format json|csv]
@@ -96,3 +126,9 @@ Supported commands for each scope:
 13. bygenre --genre "genre" --min (minrating) [--from (minimum year) --to (last year of airing) --format json|csv]
 14. name --nameid ":nameID" [--format json|csv]
 15. searchname --name "namepart" [--format json|csv]
+
+
+
+
+
+
