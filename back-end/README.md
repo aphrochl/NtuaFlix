@@ -12,9 +12,38 @@
 
 ## Back-end
 
-Στο Back-end υλοποιουμε τα εξης :ΟΛΑ
+Στο Back-end υλοποιούμε τα εξής:
+
+####REST Api
+
+1. Διαχειριστικά endpoints
+2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
+3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
+
+####Database Connection
 
 
+
+# CLI
+
+## Installation
+
+### Requirements:
+
+- Node.js version: 18.5.0 or newer
+- npm version: 10.2.3 or newer
+
+### Node.js
+
+#### Installing the packages:
+
+Copy _cli.js_ and _package.json_ into your desired directory.
+
+In command prompt, navigate to the selected directory and execute the command:
+
+```
+npm install
+```
 
 
 ## Installation for back-end 
