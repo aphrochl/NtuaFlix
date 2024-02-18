@@ -3,10 +3,10 @@
 Ενδεικτικά περιεχόμενα:
 
 - [Back-end](#Back-end)
-- [Database dump (sql ή json)](#Database dump (sql ή json))
-- [Back-end functional tests](#Back-end functional tests)
-- [Back-end unit tests](#Back-end unit tests)
-- [RESTful API.](#RESTful API)
+- [Database dump (sql ή json)](#Databasedump(sql ή json))
+- [Back-end functional tests](#Back-endfunctionaltests)
+- [Back-end unit tests](#Back-endunittests)
+- [RESTful API.](#RESTfulAPI)
 
 
 
