@@ -69,6 +69,8 @@
 
 
 Χρησιμοποιηθηκαν οι εξης φωτογραφιες και τα υπολοιπα γραφικα υλοποιηθηκαν στη main.css
+
+
 ![none.png](public/none.png) ![small_logo.png](public/small_logo.png) ![big_logo.png](public/big_logo.png)
 
 
