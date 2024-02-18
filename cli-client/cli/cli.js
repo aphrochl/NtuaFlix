@@ -613,7 +613,7 @@ yargs
         // Set the options for the https.request
         const options = {
           hostname: 'localhost', // Replace with your API hostname
-          port: 8765,            // Replace with your API port
+          port: 9876,            // Replace with your API port
           path: '/ntuaflix_api/searchname',
           method: 'GET',
           headers: {
