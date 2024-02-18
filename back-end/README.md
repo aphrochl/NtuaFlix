@@ -18,9 +18,9 @@
 
 
 
-## Installation
+## Installation for back-end 
 
-### for back end 
+
 ```sh
 git clone 
 ```
@@ -52,7 +52,7 @@ npm install
 
 
 
-## Database dump (sql ή json)
+## Database dump
 Αποτελειται απο τα εξης:
 
 
