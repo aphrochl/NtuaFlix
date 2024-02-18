@@ -92,7 +92,7 @@ Supported commands for each scope:
 
 #### Installing the packages:
 
-Create a copy of the _'__tests__'_ folder into your desired directory, where _cli.js_ and _package.json_ exist.
+Create a copy of the *__tests__* folder into your desired directory, where _cli.js_ and _package.json_ exist.
 
 In command prompt, navigate to the selected directory and install Jest and Supertest:
 
