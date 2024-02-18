@@ -68,7 +68,11 @@
 **[https://github.com/ntua/softeng23-55/blob/main/front-end/public/main.css]**
 
 
-
+Χρησιμοποιηθηκαν οι εξης φωτογραφιες και τα υπολοιπα γραφικα υλοποιηθηκαν στη main.css
+![Logo](front-end/public/big_logo.png)
+![Logo](front-end/public/none.png)
+![Logo](front-end/public/small_logo.png)
+ 
 
 
 
