@@ -13,6 +13,9 @@
 
 ## Back-end
 
+Στο Back-end υλοποιουμε τα εξης :ΟΛΑ
+
+
 
 
 
@@ -33,6 +36,9 @@
 
 
 ## Database dump (sql ή json)
+
+Εχουμε τα δεδομενα truncated data που κανουμε populate τη βαση 
+
 
 
 
