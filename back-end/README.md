@@ -32,9 +32,6 @@ To install the back-end, copy the files in the back-end folder into your desired
 Install the packages:
 
 ```sh
-npm init
-```
-```sh
 npm install
 ```
 
