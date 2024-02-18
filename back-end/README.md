@@ -23,9 +23,6 @@
 #### Database Connection
 
 
-
-# CLI
-
 ## Installation
 
 ### Requirements:
