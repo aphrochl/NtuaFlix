@@ -21,7 +21,7 @@
 
  
 ### [Back-end](https://github.com/ntua/softeng23-55/blob/main/back-end/README.md)
-### [CLI client](https://github.com/ntua/softeng23-55/blob/main/cli-client/cli/README.md)
+### [CLI client](https://github.com/ntua/softeng23-55/blob/main/cli-client/README.md)
 ### [Front-end](https://github.com/ntua/softeng23-55/blob/main/front-end/README.md)
 ### [Documentation]( https://github.com/ntua/softeng23-55/blob/main/documentation/README.md)
 ### [ai-log](https://github.com/ntua/softeng23-55/blob/main/ai-log/README.md)
