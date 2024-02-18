@@ -71,9 +71,9 @@
 Χρησιμοποιηθηκαν οι εξης φωτογραφιες και τα υπολοιπα γραφικα υλοποιηθηκαν στη main.css
 ![Logo](public/big_logo.png)
 
-![Logo](none.png)
+![Logo]((public/none.png)
 
-![Logo](front-end/public/small_logo.png)
+![Logo]((public/small_logo.png)
 
  
 
