@@ -23,9 +23,12 @@
 #### Database Connection
 
 
+
+
+
 ## Installation
 
-Copy the files in the back-end folder into your desired directory.
+To install the back-end, copy the files in the back-end folder into your desired directory.
 Install the packages:
 
 ```sh
@@ -36,6 +39,15 @@ npm install
 ```
 
 
+
+
+## Execution
+
+To execute the back-end, navigate using the command line to the directory that you have your back-end files and run the _server.js_:
+
+```sh
+node server.js
+```
 
 
 
