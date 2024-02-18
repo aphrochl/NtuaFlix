@@ -20,38 +20,13 @@
 2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
 3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
 
-#### Database Connection
 
 
-## Installation
 
-### Requirements:
-
-- Node.js version: 18.5.0 or newer
-- npm version: 10.2.3 or newer
-
-### Node.js
-
-#### Installing the packages:
-
-Copy _cli.js_ and _package.json_ into your desired directory.
-
-In command prompt, navigate to the selected directory and execute the command:
-
-```
-npm install
-```
+## Installation for back-end  and the packages
+Take the package.json 
 
 
-## Installation for back-end 
-
-
-```sh
-git clone 
-```
-go to the project directory
-```sh
-cd NTUAflix
 ```
 install dependencies
 ```sh
