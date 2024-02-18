@@ -65,41 +65,30 @@ npm install
 Βεβαιωθείτε ότι το MySQL λειτουργεί. (Για παράδειγμα, βεβαιωθείτε ότι το XAMPP είναι ενεργό με ενεργό το Apache και το MySQL)
 
 
+- In command prompt, navigate to xampp/mysql/bin directory.
 
+- Inside the directory execute the following command:
 
 ```sh
 mysql -u root -p
 ```
-create a new database for this project.
+
+- Create a new database for this project:
+
 ```sh
 create database `your database name`;
 ```
+
+- Now load the dump into the new database:
 ```sh
-use `your database name`;
+mysql -u root -p `your database name` < path\to\ntuaflix_dump.sql
 ```
-for the following command replace `/path/to/db.sql` with the actual path to the sql file which is located in the `utils` folder inside the `api-backend` folder in the root of the project.
-```
-SOURCE /path/to/db.sql;
-```
-```
-exit;
-```
+We have now successfully copied and loaded the database. Alternatively, we can only load the database
+schema, without any data:
 
-populate the database with data
 ```sh
-node script.js
-
+mysql -u root -p `your database name` < path\to\ntuaflix-schema.sql
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
