@@ -6,7 +6,7 @@
 
 Αποτελείται από το public file, στο οποίο υλοποιούμε τα εξής:
 
-- [**index_homepage.html**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/index_homepage.html)
+- [**index_homepage.html**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/index_homepage.html) - HTML file for the homepage.
 - [**homepage.js**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/homepage.js)
 - [**itrendingMovies.js**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/itrendingMovies.js)
 - [**results.html**](https://github.com/ntua/softeng23-55/blob/main/front-end/public/results.html)
