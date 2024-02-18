@@ -3,8 +3,8 @@
 Ενδεικτικά περιεχόμενα:
 
 - [Command line interface (CLI).](#CLI)
-- CLI functional tests.
-- CLI unit tests.
+- [CLI functional tests.](#[CLI-functional-tests)
+- [CLI unit tests.](#CLI-unit-tests)
 
 
 
@@ -79,6 +79,17 @@ Supported commands for each scope:
 7. newepisode --filename "path/to/truncated_title.episode.tsv" [--format json|csv]
 8. newprincipals --filename "path/to/truncated_title.principals.tsv" [--format json|csv]
 9. newratings --filename "path/to/truncated_title.ratings.tsv" [--format json|csv]
+
+
+
+
+
+
+
+
+
+# CLI functional tests
+# CLI unit tests
 10. title --titleID ":titleID" [--format json|csv]
 11. titlefull --titleID ":titleID" [--format json|csv]
 12. searchtitle --titlepart "titlepart" [--format json|csv]
