@@ -8,7 +8,7 @@
 
 
  
-[![ntuaflix2.PNG](public/ntuaflix2.PNG)](https://github.com/ntua/softeng23-55/blob/main/front-end/ntuaflix2.PNG)
+[![ntuaflix2.PNG](ntuaflix2.PNG)](https://github.com/ntua/softeng23-55/blob/main/front-end/ntuaflix2.PNG)
 
 
 
