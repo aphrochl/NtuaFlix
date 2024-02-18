@@ -89,6 +89,25 @@ Supported commands for each scope:
 
 
 # CLI functional tests
+
+Use a testing framework like Jest
+Install Jest and Supertest
+
+Jest is used for writing tests.
+Supertest or nock can be used for mocking HTTP requests.
+
+```sh
+npm install --save-dev jest supertest nock
+```
+
+
+
+
+
+
+
+
+
 # CLI unit tests
 10. title --titleID ":titleID" [--format json|csv]
 11. titlefull --titleID ":titleID" [--format json|csv]
@@ -96,3 +115,9 @@ Supported commands for each scope:
 13. bygenre --genre "genre" --min (minrating) [--from (minimum year) --to (last year of airing) --format json|csv]
 14. name --nameid ":nameID" [--format json|csv]
 15. searchname --name "namepart" [--format json|csv]
+
+
+
+
+
+
