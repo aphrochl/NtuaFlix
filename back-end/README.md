@@ -52,7 +52,7 @@ npm install
 
 
 
-## Database dump
+## Databasedump
 Αποτελειται απο τα εξης:
 
 
