@@ -90,18 +90,29 @@ Supported commands for each scope:
 
 # CLI functional tests
 
-Use a testing framework like Jest
-Install Jest and Supertest
+#### Installing the packages:
 
-Jest is used for writing tests.
-Supertest or nock can be used for mocking HTTP requests.
+Create a copy of the __tests__ folder into your desired directory, where _cli.js_ and _package.json_ exist.
+
+In command prompt, navigate to the selected directory and install Jest and Supertest:
 
 ```sh
 npm install --save-dev jest supertest nock
 ```
 
+or just install all the dependencies of the package.json file:
 
+```sh
+npm install
+```
 
+#### Usage:
+
+To run the CLI tests, execute the command:
+
+```
+npx jest
+```
 
 
 
