@@ -1,45 +1,77 @@
-# CLI
+# CLI 
 
-Διαχειριστικά endpoints work in this CLI. It is run with these commands (change the path for your own):
-1. node cli.js resetall --format json
-2. node cli.js healthcheck --format json
-3. node cli.js newtitles --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.basics.tsv" --format json
-4. node cli.js newakas --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.akas.tsv" --format json
-5. node cli.js newnames --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_name.basics.tsv" --format json
-6. node cli.js newcrew --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.crew.tsv" --format json
-7. node cli.js newepisode --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.episode.tsv" --format json
-8. node cli.js newprincipals --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.principals.tsv" --format json
-9. node cli.js newratings --filename "C:/Users/Αφροδίτη/tl/NtuaFlix/truncated data/truncated_title.ratings.tsv" --format json  
+##Installation
 
+### Requirements:
 
+- Node.js version: 18.5.0 or newer
+- npm version: 10.2.3 or newer
 
-# Update 1:
+### Node.js
 
-- Added 2 methods to diplay csv:
-	- From array: Used in status messages
-	- From JSON: Used in GET endpoints as workaround for data display problems
-- Added 2 endpoints:
-	- GET/title/:titleID
-	- GET/name/:nameID
+#### Installing the packages:
 
-New package installed:
-	"json-2-csv": "^5.0.1"
+Copy _cli.js_ and _package.json_ into your desired directory.
 
-# Update 2:
+In command prompt, navigate to the selected directory and execute the command:
 
-- Added 2 more endpoints:
-	- GET/searchtitle
-	- GET/searchname
+```
+npm install
+```
 
-Both need the package https.
+#### Usage:
 
-Remaining: 
-	- GET/bygenre
+To run the CLI, execute the command:
 
-# Update 3:
+```
+node cli.js scope --param1 value1 [--param2 value2 ...] --format fff
+```
 
-- GET/bygenre is now also implemented and working (some tests are needed tho :D )
+### Executable
 
-# Update 4:
+Copy se2355.exe to your desired directory
 
-Fixed Scope Names and Parameters for all endpoints (probably)
+In command prompt, navigate to the selected directory and execute the command:
+
+```
+se2355.exe scope --param1 value1 [--param2 value2 ...] --format fff
+```
+
+## Using the CLI:
+
+In command prompt execute the commands for either [Node.js](###node.js) or [executable](###executable) where:
+
+scope: 
+- resetall       	Reset all data on the server
+- healthcheck    	Perform a health check on the server
+- newtitles      	Upload titlebasics data
+- newakas        	Upload titleakas data
+- newnames       	Upload namebasics data
+- newcrew        	Upload titlecrew data
+- newepisode     	Upload titleepisode data
+- newprincipals  	Upload titleprincipals data
+- newratings    	Upload titleratings data
+- title          	Get details from title with the given ID
+- titlefull      	Get all details from title with the given ID
+- searchtitle    	Get title that contains the search word
+- bygenre        	Get titles that match given genre and minimum rating
+- name           	Get details for actor with the given ID
+- searchname     	Get name that contains the search word
+- help 		Show help
+
+Supported commands for each scope:
+1. resetall [--format json|csv]
+2. healthcheck [--format json|csv]
+3. newtitles --filename "path/to/truncated_title.basics.tsv" [--format json|csv]
+4. newakas --filename "path/to/truncated_title.akas.tsv" [--format json|csv]
+5. newnames --filename "path/to/truncated_name.basics.tsv" [--format json|csv]
+6. newcrew --filename "path/to/truncated_title.crew.tsv" [--format json|csv]
+7. newepisode --filename "path/to/truncated_title.episode.tsv" [--format json|csv]
+8. newprincipals --filename "path/to/truncated_title.principals.tsv" [--format json|csv]
+9. newratings --filename "path/to/truncated_title.ratings.tsv" [--format json|csv]
+10. title --titleID ":titleID" [--format json|csv]
+11. titlefull --titleID ":titleID" [--format json|csv]
+12. searchtitle --titlepart "titlepart" [--format json|csv]
+13. bygenre --genre "genre" --min (minrating) [--from (minimum year) --to (last year of airing) --format json|csv]
+14. name --nameid ":nameID" [--format json|csv]
+15. searchname --name "namepart" [--format json|csv]

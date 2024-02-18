@@ -370,6 +370,36 @@ yargs
     },
   })
   .command({
+    command: 'titlefull',
+    describe: 'Get all details from title with the given ID',
+    builder: (yargs) => {
+      return yargs.option('titleID', {
+        describe: 'Title ID',
+        type: 'string',
+        demandOption: true,
+      });
+    },
+    handler: async (argv) => {
+      const titleID = argv.titleID;
+
+      try {
+        // Make the corresponding REST API call for titleID
+        const response = await axios.get(`${baseURL}/title1/${titleID}`);
+
+        // Output the response based on the specified format
+        if (argv.format && argv.format.toLowerCase() === 'csv') {
+          // Handle CSV format
+          console.log(converter.json2csv(response.data));
+        } else {
+          // Default to JSON format
+          console.log(JSON.stringify(response.data, null, 2));
+        }
+      } catch (error) {
+        console.error('Error:', error.message);
+      }
+    },
+  })
+  .command({
     command: 'searchtitle',
     describe: 'Get title that contains the search word',
     builder: (yargs) => {
