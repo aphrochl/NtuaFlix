@@ -1,15 +1,17 @@
 # Front-end
 
-Ενδεικτικά περιεχόμενα:
+This directory contains the front-end implementation for the **NtuaFlix** project, responsible for presenting data in a web environment.
 
-- Front-end παρουσίασης δεδομένων σε περιβάλλον web.
+## Contents:
+
+- Front-end for displaying data in a web interface.
 
 
 
 
  
 [![ntuaflix2.PNG](ntuaflix2.PNG)](https://github.com/ntua/softeng23-55/blob/main/front-end/ntuaflix2.PNG)
-
+[![ntuaflix2.PNG](ntuaflix2.PNG)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/ntuaflix2.PNG)
 
 
  
