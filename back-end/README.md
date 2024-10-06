@@ -1,6 +1,6 @@
 # Back-end
 
-Ενδεικτικά περιεχόμενα:
+## Contents:
 
 - [Back-end](#Back-end)
 - [Database dump (sql ή json)](#Database-dump)
@@ -8,35 +8,26 @@
 - [Back-end unit tests](#Back-end-unit-tests)
 - [RESTful API](#RESTful-API)
 
-
-
 ## Back-end
 
-Στο Back-end υλοποιούμε τα εξής:
+In the back-end, we implement the following:
 
-#### REST Api
+#### REST API
 
-1. Διαχειριστικά endpoints
-2. Λειτουργίες συστήματος (υπόλοιπα endpoints)
-3. Άλλα endpoints απαραίτητα για τα use cases ή για την ομαλή λειτουργία του Frontend
+1. Administrative endpoints
+2. System functionalities (remaining endpoints)
+3. Other endpoints necessary for the use cases or to ensure smooth interaction with the Frontend
 
 #### Database Connection
 
-
-
-
-
 ## Installation
 
-To install the back-end, copy the files in the back-end folder into your desired directory.
-Install the packages:
+To install the back-end, copy the files from the back-end folder to your desired directory.  
+Install the necessary packages:
 
 ```sh
 npm install
 ```
-
-
-
 
 ## Execution
 
@@ -45,24 +36,16 @@ To execute the back-end, navigate using the command line to the directory that y
 ```sh
 node server.js
 ```
+## Database Dump
 
+The database dump consists of the following:
 
-
-
-
-## Database dump
-Αποτελειται απο τα εξης:
-
-
--Schema της βασης 
--τα δεδομενα truncated data που κανουμε populate τη βαση 
-
-
+- The database schema
+- Truncated data used to populate the database
 
 ### Database Setup
 
-Βεβαιωθείτε ότι το MySQL λειτουργεί. (Για παράδειγμα, βεβαιωθείτε ότι το XAMPP είναι ενεργό με ενεργό το Apache και το MySQL)
-
+Make sure that MySQL is running. (For example, ensure that XAMPP is active with both Apache and MySQL services running.)
 
 - In command prompt, navigate to xampp/mysql/bin directory.
 
