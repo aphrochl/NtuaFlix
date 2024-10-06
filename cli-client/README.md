@@ -1,6 +1,6 @@
 # CLI client
 
-Ενδεικτικά περιεχόμενα:
+## Contents:
 
 - [Command line interface (CLI).](#CLI)
 - [CLI functional tests.](#[CLI-functional-tests)
