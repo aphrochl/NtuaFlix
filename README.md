@@ -24,12 +24,6 @@ Key features:
 - **Data integration**: Supports the import of movie and TV series data from a subset of IMDb, either via API or predefined datasets provided by the course platform (helios).
 - **Automated testing**: Includes scripts for automatic testing of the backend functionality to ensure compliance with specified requirements.
 - **Version control and project management**: GitHub is used for source code management, version control, and project tracking.
-
-The development stack includes:
-- **Backend**: Implemented using Python or JavaScript (Node.js/Express).
-- **Database**: Supports various data management solutions, such as MySQL, PostgreSQL, or MongoDB.
-- **Frontend**: Free to choose frontend frameworks or libraries for web-based data visualization and interaction.
-
 ---
 
 ## Our project consists of
