@@ -27,8 +27,8 @@ The front-end consists of the `public` folder, where the following files are imp
 
 ### Images used:
 
-[![none.png](public/none.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/none.png)
-[![small_logo.png](public/small_logo.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/small_logo.png)
-[![big_logo.png](public/big_logo.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/big_logo.png)
+- [![none.png](public/none.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/none.png)
+- [![small_logo.png](public/small_logo.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/small_logo.png)
+- [![big_logo.png](public/big_logo.png)](https://github.com/ntua-el20889/NtuaFlix/blob/main/front-end/public/big_logo.png)
 
 All other graphical elements were implemented within the `main.css` file.
