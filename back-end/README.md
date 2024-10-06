@@ -4,9 +4,6 @@
 
 - [Back-end](#Back-end)
 - [Database dump (sql ή json)](#Database-dump)
-- [Back-end functional tests](#Back-end-functional-tests)
-- [Back-end unit tests](#Back-end-unit-tests)
-- [RESTful API](#RESTful-API)
 
 ## Back-end
 
@@ -71,78 +68,3 @@ schema, without any data:
 ```sh
 mysql -u root -p `your database name` < path\to\ntuaflix-schema.sql
 ```
-
-
-
-
-
-
-
-
-## Back-end functional tests
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Back-end unit tests
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## RESTful API
-
-
-
-
