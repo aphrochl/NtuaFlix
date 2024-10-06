@@ -1,6 +1,6 @@
 # Documentation
 
-This directory contains the documentation for the Library Management System project. Below is a list of the various diagrams and documents included.
+This directory contains the documentation for the **NtuaFlix** software engineering project. Below is a list of the various diagrams and documents included.
 
 ## Contents
 
