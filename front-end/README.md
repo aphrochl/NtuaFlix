@@ -1,6 +1,6 @@
 # Front-end
 
-This directory contains the front-end implementation for the **NtuaFlix project**, responsible for presenting data in a web environment.
+This directory contains the front-end implementation for the **NtuaFlix** project, responsible for presenting data in a web environment.
 
 ## Contents:
 
