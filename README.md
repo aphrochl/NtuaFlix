@@ -4,7 +4,7 @@
 
 ## Team's Members 
 
- **Afroditi Marianthi Chlapani [github](https://github.com/ntua-el20889)**  
+ **Afroditi Marianthi Chlapani [github](https://github.com/aphrochl)**  
  **Takis Stamatopoulos [github](https://github.com/ntua-el20096)**  
  **Kyriaki Karatzouni [github](https://github.com/ntua-el20634)**  
  **Dora Exarchou [github](https://github.com/ntua-el20865)**  
