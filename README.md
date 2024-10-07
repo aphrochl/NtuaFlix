@@ -1,58 +1,35 @@
-# Simply Solved
+ # NTUAflix
+ 
+![Logo](front-end/public/big_logo.png)
 
-<p align="center">
-  <img src="https://github.com/ntua/saas2024-55/blob/main/frontend/src/logo.png?raw=true" alt="Logo" width="200">
-</p>
+## Team's Members 
 
----
-
-## Team Members 
-
-**Takis Stamatopoulos [el20096@mail.ntua.gr](https://github.com/ntua-el20096)**  
-**Afroditi Marianthi Chlapani [el20889@mail.ntua.gr](https://github.com/ntua-el20889)**  
-**Kyriaki Karatzouni [el20634@mail.ntua.gr](https://github.com/ntua-el20634)**  
+ **Takis Stamatopoulos [el20096@mail.ntua.gr](https://github.com/ntua-el20096)**  
+ **Afroditi Marianthi Chlapani [el20889@mail.ntua.gr](https://github.com/ntua-el20889)**  
+ **Kyriaki Karatzouni [el20634@mail.ntua.gr](https://github.com/ntua-el20634)**  
+ **Dora Exarchou [el20865@mail.ntua.gr](https://github.com/ntua-el20865)**  
 
 ---
 
 ## Project Overview
 
-This project implements **Simply Solved**, a microservices-based platform designed to manage user-submitted problems, automatically solve them, and handle payments and statistics. The application follows a full-stack implementation with separate services for core functionalities, communication through REST APIs, and Docker-based orchestration.
+This project implements **NtuaFlix**, a software application designed for navigating and analyzing movie and TV series data, as well as managing personal collections and recommendations. The system integrates data from IMDb, allowing users to explore metadata such as titles, genres, actors, and more. The project features a full-stack implementation, with a back-end system, CLI, and front-end web interface. 
 
 Key features:
-- **Backend microservices**: Several microservices, including user management, problem handling, solution generation, payments, and statistics, each running as an independent service. 
-- **API Gateway**: A reverse proxy that routes requests from the frontend to the appropriate backend microservices.
-- **Problem submission and solving**: Users can submit problems, which are automatically processed and solved by the system.
-- **Payment handling**: The platform manages transactions related to user credits and balances.
-- **Statistics and analytics**: Extraction of detailed usage metrics and performance statistics based on user-submitted problems and solutions.
-- **Dockerized architecture**: The system is fully containerized, making it easy to deploy and scale.
+- **Backend subsystem**: Provides a REST API (compliant with OpenAPI 3.0) to support the navigation, selection, and analysis of movie and series data. Users can store collections and manage recommendations for viewing.
+- **CLI (Command Line Interface)**: Acts as a client for the backend, allowing users to interact with the ntuaflix application through a terminal-based interface.
+- **Frontend application**: A web-based interface (supports HTTPS) for browsing movie and series data, as well as implementing the selected functionalities from the backend.
+- **Statistics and data analysis**: Extraction of various statistics and filters based on criteria like genre, ratings, and contributor involvement.
+- **Personal collection management**: Users can create and manage their own movie and series collections, and receive personalized recommendations.
+- **Data integration**: Supports the import of movie and TV series data from a subset of IMDb, either via API or predefined datasets provided by the course platform (helios).
+- **Automated testing**: Includes scripts for automatic testing of the backend functionality to ensure compliance with specified requirements.
 - **Version control and project management**: GitHub is used for source code management, version control, and project tracking.
-
 ---
 
-## Our Project Consists of
+## Our project consists of
 
-### [Backend](https://github.com/ntua-el20889/SolveMyProblem/tree/main/backend)
-### [CLI Client](https://github.com/ntua-el20889/SolveMyProblem/tree/main/cli-client)
-### [Frontend](https://github.com/ntua-el20889/SolveMyProblem/tree/main/frontend)
-### [Documentation](https://github.com/ntua-el20889/SolveMyProblem/tree/main/documentation)
-### [AI-Log](https://github.com/ntua-el20889/SolveMyProblem/tree/main/ai-log)
-
----
-
-## Installation
-
-### Requirements
-
-Ensure you have the following installed:
-- **PgAdmin4**
-- **JMeter**
-- **Node.js** and **npm** (for JavaScript dependencies)
-- **Python** (for OR tools and other functionalities)
-- **Docker**
-
-### Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ntua-el20889/SolveMyProblem.git
-   ```
+### [Back-end](https://github.com/ntua-el20889/NtuaFlix/tree/main/back-end)
+### [CLI client](https://github.com/ntua-el20889/NtuaFlix/tree/main/cli-client)
+### [Front-end](https://github.com/ntua-el20889/NtuaFlix/tree/main/front-end)
+### [Documentation](https://github.com/ntua-el20889/NtuaFlix/tree/main/documentation)
+### [ai-log](https://github.com/ntua-el20889/NtuaFlix/tree/main/ai-log)
