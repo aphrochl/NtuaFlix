@@ -28,8 +28,8 @@ Key features:
 
 ## Our project consists of
 
-### [Back-end](https://github.com/ntua-el20889/NtuaFlix/tree/main/back-end)
-### [CLI client](https://github.com/ntua-el20889/NtuaFlix/tree/main/cli-client)
-### [Front-end](https://github.com/ntua-el20889/NtuaFlix/tree/main/front-end)
-### [Documentation](https://github.com/ntua-el20889/NtuaFlix/tree/main/documentation)
-### [ai-log](https://github.com/ntua-el20889/NtuaFlix/tree/main/ai-log)
+### [Back-end](https://github.com/aphrochl/NtuaFlix/tree/main/back-end)
+### [CLI client](https://github.com/aphrochl/NtuaFlix/tree/main/cli-client)
+### [Front-end](https://github.com/aphrochl/NtuaFlix/tree/main/front-end)
+### [Documentation](https://github.com/aphrochl/NtuaFlix/tree/main/documentation)
+### [ai-log](https://github.com/aphrochl/NtuaFlix/tree/main/ai-log)
